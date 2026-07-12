@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Selector de etiqueta */
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #fff5f5;
+}
+
+/* Selector por clase */
+.header {
+  background-color: #333;
+  width: 100%;
+  height: 50px;
+}
+
+.header__nav {
+  text-align: end;
+  line-height: 50px;
+}
+
+/* Selector descendente */
+.header__nav a {
+  color: #fff;
+}
+
+/* Selector por clase */
+.header__link {
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 5px 10px;
+  transition: all 400ms ease;
+}
+
+.header__link:hover {
+  background-color: red;
+}
+
+.banner {
+  background-image: url("../img/image.png");
+  height: 100vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Selector descendente */
+.header__nav a {
+  color: #fff;
+}
+
+/* Selector por id */
+#presentacion {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Selectores combinados */
+h1,
+h2,
+h3 {
+  color: brown;
+}
+
+/* Selector hijo directo */
+.header__nav > a {
+  font-size: 18px;
+}
+
+/* Selector adyacente */
+h2 + p {
+  color: darkblue;
+}
+
+/* Selector general de hermanos */
+h2 ~ p {
+  margin-top: 10px;
+}
+
+/* Selector por atributo */
+input[type="text"] {
+  border: 2px solid pink;
+  padding: 8px;
+}
+
